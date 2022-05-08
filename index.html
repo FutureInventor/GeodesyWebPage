@@ -26,7 +26,24 @@
             </div>
         </div>
         <div class="header" id="sta">
-            Zdjęcie
+            <div class="headerBody">
+                <div class="headerText">
+                    <div class="headerAbout">
+                        D-KART Usługi geodezyjne
+                    </div>
+                    <div class="headerButtons">
+                        <a  class="headerButton" href="#usl">
+                            Sprawdź ofertę
+                        </a>
+                        <a class="headerButton" href="#kont">
+                            Skontaktuj się
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
         </div>
         <div class="information" id="ofir">
             Informacje o firmie
@@ -79,10 +96,42 @@
             width: 80vw
         }
 
+        .headerAbout {
+            margin-top: 150px;
+        }
+
         .header {
             background-color: aliceblue;
+            display: flex;
             height: 600px;
+            justify-content: center;
             max-width: 100vw;
+        }
+
+        .headerBody {
+            background-color: aliceblue;
+            display: flex;
+            height: 600px;
+            width: 70vw;
+        }
+
+        .headerButton {
+            align-items: center;
+            background-color: rgb(207, 98, 98);
+            cursor: pointer;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            width: 150px;
+        }
+
+        .headerButtons {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            margin-top: 20px;
+            
+
         }
 
         .information {
