@@ -52,35 +52,37 @@
             Informacje o firmie
         </div>
         <div class="services" id="usl">
-            <div class="services-body">
-                <div class="grid">
-                    <div class="element-of-Grid">
-                        podziały działek
-                    </div>
-                    <div class="element-of-grid">
-                        wyznaczanie punktów granicznych
-                    </div>
-                    <div class="element-of-grid">
-                        dokumenty do celów prawnych
-                    </div>
-                    <div class="element-of-grid">
-                        mapy do celów projektowych
-                    </div>
-                    <div class="element-of-grid">
-                        tyczenie budynków
-                    </div>
-                    <div class="element-of-grid">
-                        pomiary powykonawcze budynków
-                    </div>
-                    <div class="element-of-grid">
-                        inwentaryzacja uzbrojenia
-                    </div>
-                    <div class="element-of-grid">
-                        pomiary sytuacyjno-wysokościowe
-                    </div>
-                    <div class="element-of-grid">
-                        pomiary realizacyjne
-                    </div>
+            <div class="services-name">
+                Oferta
+            </div>
+            <div class="services-content">
+                <div class="element-of-Grid">
+                    podziały działek
+                </div>
+                <div class="element-of-grid">
+                    wyznaczanie punktów granicznych
+                </div>
+                <div class="element-of-grid">
+                    ustalanie przebiegu granic
+                </div>
+                <div class="element-of-grid">
+                    dokumenty do celów prawnych
+                </div>
+                <div class="element-of-grid">
+                    mapy do celów projektowych
+                </div>
+                <div class="element-of-grid">
+                    tyczenie budynków
+                </div>
+                <div class="element-of-grid">
+                    pomiary powykonawcze budynków
+                </div>
+                <div class="element-of-grid">
+                    inwentaryzacja uzbrojenia
+                </div>
+                <div class="element-of-grid">
+                    pomiary sytuacyjno-wysokościowe
+                </div>
                 </div>
             </div>
         </div>
@@ -176,19 +178,32 @@
         }
 
         .services {
-            background-color: rgb(255, 238, 221);
+            align-items: center;
+            background-color: bisque;
             display: flex;
+            flex-direction: column;
             height: 600px;
             justify-content: center;
             max-width: 100vw;
         }
 
-        .services-body {
+        .services-name {
+            margin-top: 60px;
+            font-size: xx-large;
+        }
+
+        .services-content {
+            align-items: center;
             background-color: bisque;
-            display: flex;
-            height: 600px;
-            justify-content: center;
-            width: 70vw;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            height: 450px;
+            width: 60vw;
+        }
+
+        .element-of-grid {
+            text-align: center;
+            padding: 50px;
         }
 
         .contact {
