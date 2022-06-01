@@ -7,20 +7,23 @@
         <title>
             Usługi Geodezyjne mgr inż. Dariusz Jurasz
         </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="menu">
             <div class="menu-content">
-                <a href="#sta">
+                <a id="menu" onclick="changeMenuStatus('menu')" href="#sta">
                     Start
                 </a>
-                <a href="#ofir">
+                <a id="about" onclick="changeMenuStatus('about')" href="#ofir">
                     O firmie
                 </a>
-                <a href="#usl">
+                <a id="services" onclick="changeMenuStatus('services')"  href="#usl">
                     Usługi
                 </a>
-                <a href="#kont">
+                <a id="contact" onclick="changeMenuStatus('contact')" href="#kont">
                     Kontakt
                 </a>
             </div>
@@ -142,16 +145,17 @@
         }
 
         a {
-            color:#000;
+            color: #F5F5F5;
             text-decoration:none;
         }
 
         .menu {
             align-items: center;
-            background-color: antiquewhite;
+            background-color: #231f23;
             display: flex;
             height: 60px;
             flex-direction: row;
+            font-family: 'Inter', sans-serif;
             justify-content: center;
             position: fixed;
             top: 0;
@@ -279,4 +283,20 @@
             width: 80vw
         }
     </style>
+
+    <script>
+        document.getElementById("menu").style.color="#E55829"
+
+        function changeMenuStatus(id){
+            const idNames = ["menu", "about", "services", "contact"]
+            idNames.forEach(element => {
+                if (element === id){
+                    document.getElementById(element).style.color="#E55829"
+                }
+                else {
+                    document.getElementById(element).style.color="#F5F5F5"
+                }
+            })
+        }
+    </script>
 </html>
