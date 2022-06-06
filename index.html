@@ -90,12 +90,18 @@
             </div>
         </div>
         <div class="contact" id="kont">
-            Kontakt
             <div class="contact-content">
-                <div class="contact-button">
-                    <a href="mailto:d.jurasz@wp.pl?subject=Usługi%20Geodezyjne%20-%20kontakt%20klienta."">Wyślij  Email</a></div>
-                <div class="contact-button">
-                    <a href="tel:+48600277437">Zadzwoń</a>
+                <div class="buttons-container">
+                    <div class="contact-button">
+                        <a href="tel:+48600277437">
+                            Zadzwoń
+                        </a>
+                    </div>
+                    <div class="contact-button">
+                        <a href="mailto:d.jurasz@wp.pl?subject=Usługi%20Geodezyjne%20-%20kontakt%20klienta."">
+                            Wyślij  Email
+                        </a>
+                    </div>
                 </div>
                 <form>
                     <div>
@@ -260,7 +266,15 @@
             width: 80vw
         }
 
-        .contact-button {
+        .buttons-container {
+            align-items: flex-end;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .email-button {
             align-items: center;
             background-color: rgb(207, 98, 98);
             cursor: pointer;
