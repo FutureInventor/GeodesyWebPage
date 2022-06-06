@@ -94,30 +94,40 @@
                 <div class="contact-button">
                     <a href="tel:+48600277437">Zadzwoń</a>
                 </div>
+                <form>
+                    <div>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Twoje imię"
+                            required>
+                    </div>
+                    <br>
+                    <div>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Twój adres email"
+                            required>
+                    </div>
+                    <br>
+                    <div>
+                        <input
+                            type="text"
+                            id="message"
+                            name="message"
+                            placeholder="Twoja wiadomość"
+                            required
+                            spellcheck="true"
+                            lang="pl">
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
             </div>
-            <form>
-
-                <div>
-                    <input type="text" id="yName" name="yName" placeholder="Twoje imię" required>
-                </div>
-
-                <br>
-
-                <div>
-                    <input type="text" id="yEmail" name="yEmail" placeholder="Twój adres email" required>
-                </div>
-
-                <br>
-
-                <div>
-                    <input type="text" id="yMessage" name="yMessage" placeholder="Twoja wiadomość" required>
-                </div>
-
-                <div>
-                    <input type="submit">
-                </div>
-
-            </form>
         </div>
         <div class="footer">
             <div class="footer-content">
@@ -239,10 +249,9 @@
         }
 
         .contact-content {
-            align-items: center;
+            align-items: flex-end;
             display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            flex-direction: column;
             gap: 15px;
             width: 80vw
         }
