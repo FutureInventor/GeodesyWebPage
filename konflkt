@@ -1,98 +1,7 @@
-<html lang="pl-PL">
-    <head>
-        <meta name="description" content="Ugługi geodezyjne - mgr inż. Dariusz Jurasz"/>
-        <meta charset="UTf-8"/>
-        <meta name="keywords" content="geodezja śląsk, geodezja żywiec, geodeta żywiec, geodezja, geodezja  mgr inż Dariusz Jurasz"/>
-        <meta name="author" content="Karolina Hudziec, Joanna Jurasz, Klaudia Kowalczyk"/>
-        <title>
-            Usługi Geodezyjne mgr inż. Dariusz Jurasz
-        </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="menu">
-            <div class="menu-content">
-                <a id="menu" onclick="changeMenuStatus('menu')" href="#sta">
-                    Start
-                </a>
-                <a id="about" onclick="changeMenuStatus('about')" href="#ofir">
-                    O firmie
-                </a>
-                <a id="services" onclick="changeMenuStatus('services')"  href="#usl">
-                    Usługi
-                </a>
-                <a id="contact" onclick="changeMenuStatus('contact')" href="#kont">
-                    Kontakt
-                </a>
-            </div>
-        </div>
-        <div class="header" id="sta">
-            <div class="header-content">
-                <div class="header-text">
-                    <div class="header-name">
-                        GEODEZJA
-                    </div>
-                    <div class="header-about">
-                        D-KART mgr inż. Dariusz Jurasz
-                    </div>
-                    <div class="header-info">
-                        Wykonywanie szerokiego zakresu usług geodezyjnych <br> na terenie powiatu Żywieckiego.
-                    </div>
-                    <div class="header-buttons">
-                        <a  class="header-button" href="#usl">
-                            Sprawdź ofertę
-                        </a>
-                        <a class="header-button" href="#kont">
-                            Skontaktuj się
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="information" id="ofir">
-            Informacje o firmie
-        </div>
-        <div class="services" id="usl">
-            <div class="services-name">
-                Oferta
-            </div>
-            <div class="services-content">
-                <div class="grid-element">
-                    podziały działek
-                </div>
-                <div class="grid-element">
-                    wyznaczanie punktów granicznych
-                </div>
-                <div class="grid-element">
-                    ustalanie przebiegu granic
-                </div>
-                <div class="grid-element">
-                    dokumenty do celów prawnych
-                </div>
-                <div class="grid-element">
-                    mapy do celów projektowych
-                </div>
-                <div class="grid-element">
-                    tyczenie budynków
-                </div>
-                <div class="grid-element">
-                    pomiary powykonawcze budynków
-                </div>
-                <div class="grid-element">
-                    inwentaryzacja uzbrojenia
-                </div>
-                <div class="grid-element">
-                    pomiary sytuacyjno-wysokościowe
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact" id="kont">
+  <div class="contact" id="kont">
             Kontakt
             <div class="contact-content">
-                <div class="buttons-container">
+                <div class="contact-buttons">
                     <div class="contact-button">
                         <a href="tel:+48600277437">
                             Zadzwoń
@@ -266,7 +175,7 @@
             width: 80vw
         }
 
-        .buttons-container {
+        .contact-buttons {
             align-items: flex-end;
             display: flex;
             flex-direction: row;
