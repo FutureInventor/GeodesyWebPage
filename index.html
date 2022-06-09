@@ -55,42 +55,52 @@
             Informacje o firmie
         </div>
         <div class="services" id="usl">
-            <div class="services-name">
-                <div class="services-name-mark">
-
-                </div>
-                <div class="services-name-text">
-                    Oferta firmy D-KART
-                </div>
-            </div>
             <div class="services-content">
-                <div class="grid-element">
-                    podziały działek
+                <div class="services-name">
+                    <div class="services-name-mark">
+
+                    </div>
+                    <div class="services-name-text">
+                        Oferta firmy D-KART
+                    </div>
                 </div>
-                <div class="grid-element">
-                    wyznaczanie <br> punktów granicznych
-                </div>
-                <div class="grid-element">
-                    ustalanie przebiegu granic
-                </div>
-                <div class="grid-element">
-                    dokumenty <br> do celów prawnych
-                </div>
-                <div class="grid-element">
-                    mapy <br> do celów projektowych
-                </div>
-                <div class="grid-element">
-                    pomiary <br> sytuacyjno-wysokościowe
-                </div>
-                <div class="grid-element">
-                    pomiary <br> powykonawcze budynków
-                </div>
-                <div class="grid-element">
-                    inwentaryzacja uzbrojenia
-                </div>
-                <div class="grid-element">
-                    tyczenie budynków
-                </div>
+                <div class="services-grid">
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Podziały działek
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Wyznaczanie punktów granicznych
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Ustalanie przebiegu granic
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Dokumenty do celów prawnych
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Mapy do celów projektowych
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Pomiary sytuacyjno-wysokościowe
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Pomiary powykonawcze budynków
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Inwentaryzacja uzbrojenia
+                    </div>
+                    <div class="grid-element">
+                        <img src="./assets/focus.png" alt="Girl in a jacket" width="20" height="20">
+                        Tyczenie budynków
+                    </div>
                 </div>
             </div>
         </div>
@@ -189,21 +199,21 @@
         .header {
             background-color: aliceblue;
             display: flex;
-            height: 630px;
+            height: 700px;
             justify-content: center;
             max-width: 100vw;
         }
 
         .header-content {
-            background-color: aliceblue;
+            align-items: center;
             display: flex;
             height: 630px;
+            max-width: 900px;
             width: 80vw;
         }
 
         .header-name {
             font-size: xx-large;
-            margin-top: 100px;
         }
 
         .header-button {
@@ -234,54 +244,69 @@
             display: flex;
             flex-direction: column;
             font-family: 'Inter', sans-serif;
-            height: 630px;
+            height: 700px;
             justify-content: center;
             max-width: 100vw;
+        }
+
+        .services-content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            height: 100%;
+            justify-content: center;
+            max-width: 900px;
+            width: 80vw;
         }
 
         .services-name {
             align-items: flex-start;
             display: flex;
             gap: 10px;
-            margin-top: 40px;
-            width: 970px;
+            width: 100%;
         }
 
         .services-name-mark {
             background-color: #E55829;
-            height: 37px;
+            height: 35px;
             width: 15px;
         }
 
         .services-name-text {
-            font-size: xx-large;
+            font-size: 30px;
             font-weight: bold;
         }
 
-        .services-content {
+        .services-grid {
             align-items: center;
             display: grid;
             grid-gap: 25px;
-            grid-template-columns: 230px 230px 230px;
-            grid-template-rows: 110px 110px 110px;
-            height: 380px;
+            grid-template-columns: 33% 33% 33%;
+            height: 450px;
             justify-content: center;
-            margin-top: 35px;
             place-items: stretch;
-            width: 785px;
+            width: calc(100% - 50px);
         }
 
         .grid-element {
             align-items: center;
             background-color: #F9C984;
             display: flex;
+            gap: 15px;
+            font-weight: 500;
+            flex-direction: column;
             justify-content: center;
+            padding: 20px 30px;
             text-align: center;
         }
 
         .contact {
+            align-items: center;
             background-color: rgb(199, 196, 192);
-            height: 575px;
+            display: flex;
+            height: 700px;
+            justify-content: center;
             max-width: 100vw;
         }
 
@@ -290,6 +315,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            max-width: 900px;
             width: 80vw
         }
 
@@ -317,7 +343,7 @@
             color: #F5F5F5;
             display: flex;
             font-family: 'Inter', sans-serif;
-            font-size: x-small;
+            font-size: 12px;
             justify-content: center;
             height: 50px;
             max-width: 100vw
