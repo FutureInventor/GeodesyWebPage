@@ -3,8 +3,8 @@ body {
 }
 
 a {
-    color: #F5F5F5; 
-    text-decoration:none !important; 
+    color: #F5F5F5;
+    text-decoration:none;
 }
 
 .menu {
@@ -36,21 +36,21 @@ a {
 .header {
     background-color: aliceblue;
     display: flex;
-    height: 600px;
+    height: 700px;
     justify-content: center;
     max-width: 100vw;
 }
 
 .header-content {
-    background-color: aliceblue;
+    align-items: center;
     display: flex;
-    height: 600px;
+    height: 630px;
+    max-width: 900px;
     width: 80vw;
 }
 
 .header-name {
     font-size: xx-large;
-    margin-top: 100px;
 }
 
 .header-button {
@@ -71,42 +71,79 @@ a {
 
 .information {
     background-color: rgb(226, 223, 218);
-    height: 600px;
+    height: 630px;
     max-width: 100vw;
 }
 
 .services {
     align-items: center;
-    background-color: bisque;
+    background-color: #F5F5F5;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    font-family: 'Inter', sans-serif;
+    height: 700px;
     justify-content: center;
     max-width: 100vw;
 }
 
-.services-name {
-    margin-top: 60px;
-    font-size: xx-large;
-}
-
 .services-content {
     align-items: center;
-    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    justify-content: center;
+    max-width: 900px;
+    width: 80vw;
+}
+
+.services-name {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.services-name-mark {
+    background-color: #E55829;
+    height: 35px;
+    width: 15px;
+}
+
+.services-name-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.services-grid {
+    align-items: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-gap: 25px;
+    grid-template-columns: 33% 33% 33%;
     height: 450px;
-    width: 60vw;
+    justify-content: center;
+    place-items: stretch;
+    width: calc(100% - 50px);
 }
 
 .grid-element {
+    align-items: center;
+    background-color: #F9C984;
+    display: flex;
+    gap: 15px;
+    font-weight: 500;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
     text-align: center;
-    padding: 50px;
 }
 
 .contact {
+    align-items: center;
     background-color: rgb(199, 196, 192);
-    height: 600px;
+    display: flex;
+    height: 700px;
+    justify-content: center;
     max-width: 100vw;
 }
 
@@ -115,6 +152,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    max-width: 900px;
     width: 80vw
 }
 
@@ -142,7 +180,7 @@ a {
     color: #F5F5F5;
     display: flex;
     font-family: 'Inter', sans-serif;
-    font-size: x-small;
+    font-size: 12px;
     justify-content: center;
     height: 50px;
     max-width: 100vw
@@ -151,5 +189,3 @@ a {
 .footer-content {
     width: 80vw
 }
-
-
