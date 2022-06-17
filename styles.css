@@ -140,7 +140,9 @@ a {
 
 .contact {
     align-items: center;
-    background-color: rgb(199, 196, 192);
+    background-image: linear-gradient(rgba(245, 245, 245, 1), rgba(0, 0, 0, 0)), url('assets/contact-background.jpg');
+    background-position: top;
+    background-size: cover;
     display: flex;
     height: 700px;
     justify-content: center;
