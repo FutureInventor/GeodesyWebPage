@@ -15,16 +15,16 @@
     <body>
         <div class="menu">
             <div class="menu-content">
-                <a id="menu" onclick="changeMenuStatus('menu')" href="#start">
+                <a id="menu" href="#start">
                     Start
                 </a>
-                <a id="about" onclick="changeMenuStatus('about')" href="#information">
+                <a id="about" href="#information">
                     O firmie
                 </a>
-                <a id="offer" onclick="changeMenuStatus('services')"  href="#services">
+                <a id="offer" href="#services">
                     Usługi
                 </a>
-                <a id="call" onclick="changeMenuStatus('contact')" href="#contact">
+                <a id="call" href="#contact">
                     Kontakt
                 </a>
             </div>
@@ -162,18 +162,6 @@
     </body>
     <script>
         document.getElementById("menu").style.color="#E55829"
-
-        function changeMenuStatus(id){
-            const idNames = ["menu", "about", "offer", "call"]
-            idNames.forEach(element => {
-                if (element === id){
-                    document.getElementById(element).style.color="#E55829"
-                }
-                else {
-                    document.getElementById(element).style.color="#F5F5F5"
-                }
-            })
-        }
 
         function isInViewport(element, index) {
             const rect = element.getBoundingClientRect()
