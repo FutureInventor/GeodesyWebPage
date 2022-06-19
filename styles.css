@@ -35,7 +35,9 @@ a {
 }
 
 .header {
-    background-color: aliceblue;
+    background-image: url(assets/header-background.jpg);
+    background-position: 0px -100px;
+    background-size: cover;
     display: flex;
     height: 700px;
     justify-content: center;
