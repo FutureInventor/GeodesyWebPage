@@ -52,6 +52,11 @@ a {
     width: 80vw;
 }
 
+.header-about {
+    display: flex;
+    flex-direction: column;
+}
+
 .header-name {
     font-size: xx-large;
 }
