@@ -1,5 +1,6 @@
 <html lang="pl-PL">
     <head>
+        <meta name="viewport" content="width=device-width">
         <meta name="description" content="Ugługi geodezyjne - mgr inż. Dariusz Jurasz"/>
         <meta charset="UTf-8"/>
         <meta name="keywords" content="geodezja śląsk, geodezja żywiec, geodeta żywiec, geodezja, geodezja  mgr inż Dariusz Jurasz"/>
@@ -155,8 +156,6 @@
                 </p>
                 <div class="contact-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330914.81049659284!2d18.93351054288566!3d49.61147737687781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47142f002c880617%3A0x3017cadc5e4d1b0!2sPowiat%20%C5%BCywiecki!5e0!3m2!1spl!2spl!4v1655799932122!5m2!1spl!2spl"
-                        width="475"
-                        height="350"
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
@@ -172,32 +171,5 @@
             </div>
         </div>
     </body>
-    <script>
-        document.getElementById("menu").style.color="#E55829"
-
-        function isInViewport(element, index) {
-            const rect = element.getBoundingClientRect()
-            return {
-                top: Math.abs(rect.top),
-                index
-            }
-        }
-
-        document.addEventListener("scroll", () => {
-            const segmentsId = ["start", "information", "services", "contact"]
-            const menuId = ["menu", "about", "offer", "call"]
-
-            const arrTops = segmentsId.map((id, index) => isInViewport(document.getElementById(id), index))
-
-            const smallesTop = arrTops.reduce(
-                (prevElement, currentElement) => {
-                    return prevElement.top > currentElement.top > 0 ? currentElement : prevElement
-                }
-            )
-
-            menuId.forEach((id) => document.getElementById(id).style.color = "#F5F5F5")
-            document.getElementById(menuId[smallesTop.index]).style.color = "#E55829"
-        })
-
-    </script>
+    <script src="./index.js"></script>
 </html>
